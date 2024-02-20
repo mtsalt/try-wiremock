@@ -1,0 +1,9 @@
+services:
+  wiremock:
+    image: wiremock/wiremock:3.4.1
+    container_name: try_wiremock
+    ports:
+      - ${WIREMOCK_PORT}:8080
+    volumes:
+      - ./wiremock_data:/home/wiremock
+    command: --local-response-templating

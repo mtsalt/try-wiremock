@@ -1,0 +1,15 @@
+{
+    "request": {
+        "urlPath": "/try-wiremock",
+        "method": "GET",
+        "headers": {
+            "Content-Type": {
+                "matches": "application/json"
+            }
+        }
+    },
+    "response": {
+        "status": 200,
+        "body": "GET request detected!"
+    }
+}
